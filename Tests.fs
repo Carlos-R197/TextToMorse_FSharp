@@ -19,3 +19,8 @@ let word_test () =
 [<Fact>]
 let phrase_test () =
     Assert.Equal(".... . .-.. .-.. --- --..-- / .-- --- .-. .-.. -..", text_to_morse("Hello, World"))
+
+[<Fact>]
+let full_sentence_test () =
+    Assert.Equal(".... . .-.. .-.. --- --..-- / -- -.-- / -. .- -- . / .. ... / -.-. .- .-. .-.. --- ... / .-. --- --.- ..- . / .- -. -.. / .. / .- -- / ..-. .-. --- -- / - .... . / -.. --- -- .. -. .. -.-. .- -. / .-. . .--. ..- -... .-.. .. -.-. .-.-.-", 
+        text_to_morse("Hello, my name is carlos roque and i am from the Dominican Republic."))
