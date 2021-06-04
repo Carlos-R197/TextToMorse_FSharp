@@ -15,3 +15,7 @@ let one_letter_test () =
 [<Fact>]
 let word_test () =
     Assert.Equal(".... . .-.. .-.. ---", text_to_morse("Hello"))
+
+[<Fact>]
+let phrase_test () =
+    Assert.Equal(".... . .-.. .-.. --- --..-- / .-- --- .-. .-.. -..", text_to_morse("Hello, World"))
